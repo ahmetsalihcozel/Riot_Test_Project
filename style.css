@@ -1,0 +1,13 @@
+.profileIcon {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+  }
+
+  .champIcon {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    width: 48px;
+  }

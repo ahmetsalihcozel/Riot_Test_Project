@@ -5,23 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LoL Account Bulucu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
     <div class="container">
+      <div class="row align-items-start">
         <h1 style="text-align: center;">League Of Legends Hesap Arama</h1>
         <form class="d-flex justify-content-center mt-3">
             <input class="d-flex p-1" placeholder="TR Summoner Name" id="textBox"></input>
-            <button value ="Submit" type="submit" class="btn btn-primary d-flex p-1">Hesap Ara</button>
+            <button id="buttonSearch" value ="Submit" type="submit" class="btn btn-primary d-flex p-1">Hesap Ara</button>
+            <div class="dropdown">
+              <button id="sumNameButton" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Oyun Tipi
+              </button>
+              <ul class="dropdown-menu">
+                <li><button id="buttonFlex"   class="dropdown-item" type="button">Dereceli 5v5 Esnek</button></li>
+                <li><button id="buttonSolo"   class="dropdown-item" type="button">Dereceli 5v5 Tekli</button></li>
+                <li><button id="buttonNomral" class="dropdown-item" type="button">Normal 5v5 </button></li>
+              </ul>
+            </div>
         </form>
-        <div class="d-flex justify-content-center mt-3">
-            <img src="https://picsum.photos/150/150" alt="">
+
+        <div class="col-5" style="background-color: aqua;">
+          <div class="row">
+
+            <div  class="max-width:%50 col-5">
+              <img class="mt-2 rounded float-start profileIcon" id="sumIcon" src="https://picsum.photos/150/150" alt="">
+            </div>
+            <div class="d-flex justify-content-left row col-4">
+              <p class="mt-3" id="">Kullanici Adi:</p>
+              <p id="">Seviye: </p>
+              <p id="">Lig: </p>
+              <p id="">Lig Seviyesi: </p>
+            </div>
+            <div class="d-flex justify-content-left row col-3">
+              <p class="mt-3" id="accName">------</p>
+              <p id="accLevel">------</p>
+              <p id="accTier">------</p>
+              <p id="accRank">------</p>
+            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <p id="accLevel">------</p>
+
+        <div id="matchHistory" class="col-7">
+
         </div>
+      </div>
+
+
+
+
         
     </div>
     <script src="test.js"></script>
